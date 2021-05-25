@@ -1,5 +1,7 @@
 github.com/adrianleh/WTMP-client v0.0.0-20210522030044-9c966bffe923 h1:WAB5r1UVxhsYswsjW+iVjsJXrArSINo8qldqgsCZMnI=
 github.com/adrianleh/WTMP-client v0.0.0-20210522030044-9c966bffe923/go.mod h1:a9qcCh0HBtJvEWhziKTq9+3xp0xIbAb40hte0MyaXw0=
+github.com/adrianleh/WTMP-client v0.0.0-20210525225559-994afed3add8 h1:TcBE42beOo4YFtih410bJeBKpki0B4nCE5glVUQ2xKs=
+github.com/adrianleh/WTMP-client v0.0.0-20210525225559-994afed3add8/go.mod h1:a9qcCh0HBtJvEWhziKTq9+3xp0xIbAb40hte0MyaXw0=
 github.com/adrianleh/WTMP-middleend v0.0.0-20210520045830-874959fe8539 h1:dRBSWz8eDB0qh8UGUynwE8DW6CLlyzP9Z04VHZfQizg=
 github.com/adrianleh/WTMP-middleend v0.0.0-20210520045830-874959fe8539/go.mod h1:g796wxcjnpyaFF32KXmWoMI4XvYnPCZw0sQ8W9ZL3x4=
 github.com/google/uuid v1.2.0 h1:qJYtXnJRWmpe7m/3XlyhrsLrEURqHRM2kxzoxXqyUDs=
