@@ -62,11 +62,10 @@ func ServerMain(args *C.Arguments) {
 			}
 		}
 
-		datum, gErr := clientlib.Get(typ)
+		_, gErr := clientlib.Get(typ)
 		if gErr != nil {
 			log.Fatal(gErr)
 		}
-		datumArr = datum.([]uint16)
 
 		C.benchmark(&bench)
 	}

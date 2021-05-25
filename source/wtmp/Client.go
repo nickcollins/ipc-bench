@@ -4,6 +4,7 @@ import (
 	"github.com/adrianleh/WTMP-client"
 	"github.com/adrianleh/WTMP-middleend/types"
 	"log"
+	"reflect"
 )
 
 // #cgo CFLAGS: -I..
@@ -50,10 +51,11 @@ func ClientMain(args *C.Arguments) {
 		}
 
 		// Dummy operation
-		datumArr := datum.([]uint16)
-		for j := range datumArr {
-			datumArr[j] = 20000
+		newDatum := make([]uint16, reflect.ValueOf(datum).Len())
+		for j := 0; j < len(newDatum); j++ {
+			newDatum[j] = 20000
 		}
+		datum = newDatum
 
 		if err := clientlib.Send(typ, "Bench-Server", datum); err != nil {
 			log.Fatal(err)
