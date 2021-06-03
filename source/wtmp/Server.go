@@ -4,6 +4,7 @@ import (
 	"github.com/adrianleh/WTMP-client"
 	"github.com/adrianleh/WTMP-middleend/types"
 	"log"
+	"time"
 )
 
 // #cgo CFLAGS: -I..
@@ -32,6 +33,7 @@ func ServerMain(args *C.Arguments) {
 	if err := clientlib.AcceptType(typ); err != nil {
 		log.Fatal(err)
 	}
+	time.Sleep(100 * time.Millisecond)
 
 	var bench C.Benchmarks
 	C.setup_benchmarks(&bench)

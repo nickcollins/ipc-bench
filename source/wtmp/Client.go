@@ -5,6 +5,7 @@ import (
 	"github.com/adrianleh/WTMP-middleend/types"
 	"log"
 	"reflect"
+	"time"
 )
 
 // #cgo CFLAGS: -I..
@@ -33,6 +34,7 @@ func ClientMain(args *C.Arguments) {
 	if err := clientlib.AcceptType(typ); err != nil {
 		log.Fatal(err)
 	}
+	time.Sleep(100 * time.Millisecond)
 
 	for i := 0; i < count; i++ {
 		for {
